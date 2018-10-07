@@ -19,7 +19,7 @@
 	</div>
 </div>
 
-<div class="" style="z-index: auto; position: static; top: auto;" id="lrg_topnav">
+<div role="navigation" aria-label="main navigation" class="" style="z-index: auto; position: static; top: auto;" id="lrg_topnav">
     <div style="width: 100%;" id="topnavlistcontainer" aria-label="main navigation tabs">
         <a name="main-nav" id="main-nav"></a>
         <ul style="" id="topnavlist">
@@ -33,13 +33,13 @@
     </div> 
 </div>
 
-<div class="logoutbar">&nbsp; <input type="text" class="input"><input type="submit" value="search"></div>
-<div class="crumbcontainer">
+<div class="logoutbar" role="search">&nbsp; <input type="text" class="input"><input type="submit" value="search"></div>
+<div class="crumbcontainer" role="contentinfo" aria-label="breadcrumb">
 		<div id="breadcrumbs" tabindex="0" aria-label="breadcrumb links">&nbsp;</div>
 </div>
 <div id="contentwrapper">
     <div id="lrg_content">
-		<div id="leftcolumn">
+		<div id="leftcolumn" role="navigation" aria-label="Left navigation">
 		  <a id="menu"></a>
 		     <div id="side-menu" aria-label="left side menu" accesskey="0">
 		        <br/>
@@ -67,161 +67,161 @@
 		</div>
     </div>	<!-- //end of the left column -->	
 
-	<div id="contentcolumn">
-	<div id="message"></div>
-	<br style="clear:both;">
-	<a id="top"></a>
+	<div id="contentcolumn" role="main">
+        <div id="message"></div>
+        <br style="clear:both;">
+        <a id="top"></a>
 
-<div class="profile">
-<h2>Join our community</h2>
-<div id="feedback">&nbsp;</div>
-<form id="join_form">
-<dl>
-<dt>
-<img src="images/required.gif" height="14" width="14" alt="Required Field" /> denotes required fields.<br />
-</dt>
-<dd>
-</dd>
-<dt>
-<label for="username">Username:</label><img src="images/required.gif"  alt="Required Field" class="img" />
-</dt>
-<dd><input id="username" class="input" type="text" value="" maxlength="30" size="20" name="username"  aria-required="true" aria-describedby="username_error"><br />
-        <span id="username_error">&nbsp;</span><br />
-</dd>
-<dt>
-    <label for="password">Password:</label>
-    <img src="images/required.gif"  alt="Required Field" />
-</dt>
-<dd>
-    <input type="text" name="password" size="20" id="password" value="" class="input" /><br />
-    <span id="password_error">&nbsp;</span>
-</dd>
-<dt>
-    <label for="email">Email:</label>
-	<img src="images/required.gif" class="img" />
-</dt>
-<dd>    
-    <input type="text" name="email" size="30" id="email" value="" class="input"/><br />
-    <span id="email_error">&nbsp;</span>
-</dd>
-<dt>
-    <label for="fname">First Name:</label>
-</dt>
-<dd>
-    <input type="text" name="fname" size="20" id="fname" value="" class="input" />
-    <span id="fname_error">&nbsp;</span>
-</dd>
-<dt>
-    <label for="lname">Last Name:</label>
-</dt>
-<dd>
-    <input type="text" name="lname" size="20" id="lname" value="" class="input" />  
-    <span id="lname_error">&nbsp;</span> 
-</dd>
+        <div class="profile">
+        <h2>Join our community</h2>
+        <div id="feedback">&nbsp;</div>
+        <form id="join_form">
+        <dl>
+        <dt>
+        <img src="images/required.gif" height="14" width="14" alt="Required Field" /> denotes required fields.<br />
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+        <label for="username">Username:</label><img src="images/required.gif"  alt="Required Field" class="img" />
+        </dt>
+        <dd><input id="username" class="input" type="text" value="" maxlength="30" size="20" name="username"  aria-required="true" aria-describedby="username_error"><br />
+                <span id="username_error">&nbsp;</span><br />
+        </dd>
+        <dt>
+            <label for="password">Password:</label>
+            <img src="images/required.gif"  alt="Required Field" />
+        </dt>
+        <dd>
+            <input type="text" name="password" size="20" id="password" value="" class="input" /><br />
+            <span id="password_error">&nbsp;</span>
+        </dd>
+        <dt>
+            <label for="email">Email:</label>
+            <img src="images/required.gif" class="img" />
+        </dt>
+        <dd>    
+            <input type="text" name="email" size="30" id="email" value="" class="input"/><br />
+            <span id="email_error">&nbsp;</span>
+        </dd>
+        <dt>
+            <label for="fname">First Name:</label>
+        </dt>
+        <dd>
+            <input type="text" name="fname" size="20" id="fname" value="" class="input" />
+            <span id="fname_error">&nbsp;</span>
+        </dd>
+        <dt>
+            <label for="lname">Last Name:</label>
+        </dt>
+        <dd>
+            <input type="text" name="lname" size="20" id="lname" value="" class="input" />  
+            <span id="lname_error">&nbsp;</span> 
+        </dd>
 
-<dt>
-    <label for="org">Organization</label>:
-</dt>
-<dd>
-    <input type="text"  class="input" id="org" name="organization" value="" size="30" />
-    <span id="org_error">&nbsp;</span>
-</dd>
-<dt>
-    <label for="address">Street Address</label>: 
-</dt>
-<dd>
-    <textarea  id="address"  class="input" name="address" cols="35" rows="3"></textarea>
-    <span id="address_error">&nbsp;</span>
-</dd>
-<dt>
-    <label for="city">City</label>: 
-</dt>
-<dd>
-    <input type="text" id="city" name="city"  class="input" value="" >
-    <span id="city_error">&nbsp;</span>
-</dd>
-<dt>
-    <label for="country">Country</label>: 
-</dt>
-<dd>
-    <select name="country" id="country">
-        <option value="ca">Canada</option>
-        <option value="usa">USA</option>
-    </select>
-    <span id="country_error">&nbsp;</span>
-</dd>
+        <dt>
+            <label for="org">Organization</label>:
+        </dt>
+        <dd>
+            <input type="text"  class="input" id="org" name="organization" value="" size="30" />
+            <span id="org_error">&nbsp;</span>
+        </dd>
+        <dt>
+            <label for="address">Street Address</label>: 
+        </dt>
+        <dd>
+            <textarea  id="address"  class="input" name="address" cols="35" rows="3"></textarea>
+            <span id="address_error">&nbsp;</span>
+        </dd>
+        <dt>
+            <label for="city">City</label>: 
+        </dt>
+        <dd>
+            <input type="text" id="city" name="city"  class="input" value="" >
+            <span id="city_error">&nbsp;</span>
+        </dd>
+        <dt>
+            <label for="country">Country</label>: 
+        </dt>
+        <dd>
+            <select name="country" id="country">
+                <option value="ca">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <span id="country_error">&nbsp;</span>
+        </dd>
 
-<dt>
-    <dt class="state_block">
-                <label for="state">State:</label>
-    </dt>
-    <dd class="state_block">
-                <input type="text" name="state" id="state" maxlength="2" class="input"/>
-                <span id="state_error">&nbsp;</span>
-    </dd>
-     <dt class="state_block">   
-     <label for="zip">ZIP Code:</label>
-     </dt>
-     <dd class="state_block">
-                    <input type="text" name="zip" id="zip"  class="input"/>
-                    <span id="zip_error">&nbsp;</span><br />
-    </dd>
+        <dt>
+            <dt class="state_block">
+                        <label for="state">State:</label>
+            </dt>
+            <dd class="state_block">
+                        <input type="text" name="state" id="state" maxlength="2" class="input"/>
+                        <span id="state_error">&nbsp;</span>
+            </dd>
+             <dt class="state_block">   
+             <label for="zip">ZIP Code:</label>
+             </dt>
+             <dd class="state_block">
+                            <input type="text" name="zip" id="zip"  class="input"/>
+                            <span id="zip_error">&nbsp;</span><br />
+            </dd>
 
-    <dt class="prov_block">
-    <label for="province">Province:</label>
-    </dt>
-    <dd class="prov_block">
-                    <select name="province" id="province" class="input">
-                        <option value="BC">BC</option>
-                        <option value="AB">AB</option>
-                        <option value="SK">SK</option>
-                        <option value="MB">MB</option>
-                        <option value="ON">ON</option>
-                        <option value="QC">QC</option>
-                        <option value="PE">PE</option>
-                        <option value="BC">NS</option>
-                        <option value="NB">NB</option>
-                        <option value="NF">NFLD</option>
-                        <option value="YK">Yukon</option>
-                        <option value="NV">Nunavut</option>
-                        <option value="NW">NWT</option>
-                    </select>
-                    <span id="province_error">&nbsp;</span>
-    </dd>
-    <dt class="prov_block">
-                <label for="postal">Postal Code:</label>
-    </dt>
-    <dd class="prov_block">
-                    <input type="text" name="postal" id="postal" class="input"/>
-                    <span id="postal_error">&nbsp;</span><br />
-    </dd>
+            <dt class="prov_block">
+            <label for="province">Province:</label>
+            </dt>
+            <dd class="prov_block">
+                            <select name="province" id="province" class="input">
+                                <option value="BC">BC</option>
+                                <option value="AB">AB</option>
+                                <option value="SK">SK</option>
+                                <option value="MB">MB</option>
+                                <option value="ON">ON</option>
+                                <option value="QC">QC</option>
+                                <option value="PE">PE</option>
+                                <option value="BC">NS</option>
+                                <option value="NB">NB</option>
+                                <option value="NF">NFLD</option>
+                                <option value="YK">Yukon</option>
+                                <option value="NV">Nunavut</option>
+                                <option value="NW">NWT</option>
+                            </select>
+                            <span id="province_error">&nbsp;</span>
+            </dd>
+            <dt class="prov_block">
+                        <label for="postal">Postal Code:</label>
+            </dt>
+            <dd class="prov_block">
+                            <input type="text" name="postal" id="postal" class="input"/>
+                            <span id="postal_error">&nbsp;</span><br />
+            </dd>
 
-<dt>
-    <label for="tele">Telephone</label>: 
-</dt>
-<dd>
-    <input type="text" id="tele" name="telephone"  class="input" value="" >
-    <span id="tele_error">&nbsp;</span>
-</dd>
-</dl>
-<br  style="clear:both;"/>
-<div>
-    <input type="button" id="join" value="Join" /> &nbsp;
-    <input type="button" id="reset_form" value="Reset" /><br />
-</div>
-</form>
-<br  style="clear:both;"/>
+        <dt>
+            <label for="tele">Telephone</label>: 
+        </dt>
+        <dd>
+            <input type="text" id="tele" name="telephone"  class="input" value="" >
+            <span id="tele_error">&nbsp;</span>
+        </dd>
+        </dl>
+        <br  style="clear:both;"/>
+        <div>
+            <input type="button" id="join" value="Join" /> &nbsp;
+            <input type="button" id="reset_form" value="Reset" /><br />
+        </div>
+        </form>
+        <br  style="clear:both;"/>
 
-		<br style="width:100%;clear:both;" />
+                <br style="width:100%;clear:both;" />
 
-	</div>
-<div id="advertising">
-<h2>Advertising</h2>
-<div>
-<img src="images/rum_cover.jpg" alt="" />
-<br style="clear:both;"/>
-</div>
-</div>
+            </div>
+    <div role="complementary" aria-label="Advertising" id="advertising">
+        <h2>Advertising</h2>
+        <div>
+        <img src="images/rum_cover.jpg" alt="" />
+        <br style="clear:both;"/>
+        </div>
+    </div>
 </div>
 
 <p><br><br>&nbsp;</p>
@@ -229,7 +229,7 @@
 <p><br><br>&nbsp;</p>
 </div>
 
-<div id="footer"> Copyright &copy; <a href="" class="fake">Chang School.</a>
+<div role="contentinfo" id="footer"> Copyright &copy; <a href="" class="fake">Chang School.</a>
 </div>
 
 </body>
