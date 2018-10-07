@@ -249,6 +249,7 @@ JoinForm.prototype.validateForm = function () {
             // Uncomment the following if statement to add an ARIA alert to the error message
             // Only the last alert is read, so limit alerts to the first error
             // so it matches with focus sent to the first message
+            //
             if(error_count == 1){
             	$s(fieldName + "_error").setAttribute("role", "alert");
             }
